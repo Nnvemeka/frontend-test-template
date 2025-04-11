@@ -1,12 +1,12 @@
 # Frontend Developer Test
 
-Welcome to the frontend developer test! This task is designed to evaluate your ability to accurately translate a visual design into a responsive, reusable, and functional React component using modern tools and best practices.
+Welcome to the frontend developer test! This task is designed to evaluate your ability to accurately translate a visual design into a responsive, reusable, and functional React component using modern tools and best practices and code ethics.
 
 ---
 
 ## 🧩 Task
 
-You are required to implement a screen based on the **design image provided in the `assets/` folder** of this project. This is a **Node.js App Router (Next.js 13+) project**, so follow the conventions of the App Router structure.
+You are required to implement a screen based on the **design image provided in the `assets/` folder** of this project. This is a **Next.js App Router (Next.js 13+) project**, so follow the conventions of the App Router structure.
 
 Your goal is to:
 - Build a functional and reusable React component based on the screen image provided.
