@@ -1,10 +1,10 @@
-import Image from "next/image";
+import ReservationsComponent from "@/components/reservations/reservations";
+import Layout from "@/components/shared/layout";
 
 export default function Reservation() {
   return (
-    <div className="">
-      {/* Your code here */}
-      <>Code..</>
-    </div>
+    <Layout headerTitle="Reservations">
+      <ReservationsComponent />
+    </Layout>
   );
 }
