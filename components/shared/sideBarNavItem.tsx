@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import { IoIosArrowDown } from "react-icons/io";
+import { IconType } from "react-icons";
 
 type SideBar = {
   title: string;
   path: string;
-  icon?: any;
+  icon?: IconType;
   submenu?: boolean;
   submenuItems?: SideBar[];
 };

@@ -19,23 +19,6 @@ const ReservationsTimesheet = () => {
   const [doctors, setDoctors] = useState<Appointment[]>(doctorsData || []);
   const [hoveredHour, setHoveredHour] = useState<string | null>(null);
 
-  //   useEffect(() => {
-  //     const updatedDoctors = doctorsData.map((doc) => ({
-  //       ...doc,
-  //       schedule: [
-  //         ...doc.schedule,
-  //         {
-  //           patient: "—",
-  //           title: "Break",
-  //           status: "unavailable" as TaskStatus,
-  //           start: "12:00 pm",
-  //           end: "12:30 pm",
-  //         },
-  //       ],
-  //     }));
-  //     setDoctors(updatedDoctors);
-  //   }, []);
-
   const handleSlotClick = (
     doctorId: string,
     doctorName: string,
@@ -104,8 +87,6 @@ const ReservationsTimesheet = () => {
   };
 
   const getTimeIndex = (time: string) => hours.indexOf(time);
-  //   const getSlotSpan = (start: string, end: string) =>
-  //     getTimeIndex(end) - getTimeIndex(start) || 1;
   const getSlotSpan = (start: string, end: string) => {
     const startIndex = getTimeIndex(start);
     const endIndex = getTimeIndex(end);
@@ -161,7 +142,7 @@ const ReservationsTimesheet = () => {
                     </span>
                   </div>
                   <p className="text-[10px] text-gray-500">
-                    Today's appointments:{" "}
+                    Today&apos;s appointments:{" "}
                     <span className="font-bold text-gray-700">
                       {doctor.numberOfPatients} patient(s)
                     </span>
