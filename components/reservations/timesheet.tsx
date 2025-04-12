@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import profileImage from "@/assets/nnaemeka.png";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import AppointmentActionModal from "./appointmentActions";
 import { doctorsData } from "@/utils/constants";
 import { Appointment, TaskStatus } from "@/utils/types";

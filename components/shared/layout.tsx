@@ -34,7 +34,7 @@ const Layout = ({
         <div className="fixed inset-0 z-40">
           {/* Sidebar */}
           <div
-            className={`fixed top-0 left-0 h-full bg-white shadow-md w-[240px] z-50 transition-transform duration-300 ${
+            className={`fixed top-0 left-0 h-full bg-white shadow-md w-[70vw] z-50 transition-transform duration-300 ${
               isMobileSidebarOpen ? "translate-x-0" : "-translate-x-full"
             }`}
           >
